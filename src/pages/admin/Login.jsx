@@ -53,14 +53,14 @@ const AdminLogin = () => {
             >
                 <div className="bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/50 relative z-10">
                     <div className="text-center mb-8">
-                        <motion.div
+                        <motion.img
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
-                            className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-white shadow-xl"
-                        >
-                            <span className="font-serif font-bold text-3xl">E</span>
-                        </motion.div>
+                            src="/essence_logo.jpg"
+                            alt="Essence"
+                            className="h-24 w-auto mx-auto mb-4 object-contain"
+                        />
                         <h1 className="text-3xl font-serif text-earth font-bold mb-2">Welcome Back</h1>
                         <p className="text-earth/60">Enter your credentials to access the admin panel</p>
                         {error && <p className="text-red-500 text-sm mt-2">{error}</p>}

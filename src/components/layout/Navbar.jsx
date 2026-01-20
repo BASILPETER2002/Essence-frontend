@@ -71,16 +71,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <Link to="/" className="flex items-center gap-3 group">
-                            <div className="relative">
-                                <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center text-white shadow-lg">
-                                    <span className="font-serif font-bold text-xl">E</span>
-                                </div>
-                                <div className="absolute -inset-1 bg-primary-400/20 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
-                            <div className="hidden md:block">
-                                <h1 className="font-serif text-2xl font-bold text-primary-700">Essence</h1>
-                                <p className="text-xs text-neutral-500 tracking-wider">NATURAL PRODUCTS</p>
-                            </div>
+                            <img src="/essence_logo.jpg" alt="Essence" className="h-16 w-auto object-contain" />
                         </Link>
 
                         {/* Desktop Navigation */}

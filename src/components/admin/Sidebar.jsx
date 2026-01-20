@@ -64,16 +64,8 @@ const Sidebar = () => {
 
     return (
         <div className="w-64 bg-white border-r border-stone-200 h-screen sticky top-0 flex flex-col p-6 shadow-sm">
-            <div className="flex items-center gap-3 mb-10 px-2 group cursor-default">
-                <div className="relative">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center text-white shadow-lg">
-                        <span className="font-serif font-bold text-xl">E</span>
-                    </div>
-                </div>
-                <div>
-                    <h1 className="font-serif text-2xl font-bold text-primary-700">Essence</h1>
-                    <p className="text-xs text-neutral-500 tracking-wider font-medium">NATURAL PRODUCTS</p>
-                </div>
+            <div className="mb-10 px-2">
+                <img src="/essence_logo.jpg" alt="Essence" className="h-16 w-auto object-contain" />
             </div>
 
             {/* Navigation */}

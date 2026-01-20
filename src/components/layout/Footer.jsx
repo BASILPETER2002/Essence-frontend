@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { 
-    Mail, 
-    Phone, 
-    MapPin, 
-    Instagram, 
-    Facebook, 
-    Twitter, 
+import {
+    Mail,
+    Phone,
+    MapPin,
+    Instagram,
+    Facebook,
+    Twitter,
     Youtube,
     Leaf,
     Truck,
@@ -82,7 +82,7 @@ const Footer = () => {
                                 Get exclusive offers, new product launches, and wellness tips directly in your inbox.
                             </p>
                         </div>
-                        
+
                         <form onSubmit={handleSubscribe} className="relative">
                             <div className="flex flex-col sm:flex-row gap-3">
                                 <input
@@ -113,20 +113,14 @@ const Footer = () => {
             {/* Main Footer */}
             <div className="max-w-7xl mx-auto px-6 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                    
+
                     {/* Brand Column */}
                     <div>
-                        <Link to="/" className="flex items-center gap-3 mb-6">
-                            <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center text-white">
-                                <span className="font-serif font-bold text-2xl">E</span>
-                            </div>
-                            <div>
-                                <h2 className="font-serif text-2xl font-bold text-primary-700">Essence</h2>
-                                <p className="text-sm text-neutral-500 tracking-wider">NATURE'S FINEST</p>
-                            </div>
+                        <Link to="/" className="inline-block mb-6">
+                            <img src="/essence_logo.jpg" alt="Essence" className="h-16 w-auto object-contain" />
                         </Link>
                         <p className="text-neutral-600 mb-6">
-                            Bringing you the purest natural products from the heart of India. 
+                            Bringing you the purest natural products from the heart of India.
                             Authentic, organic, and crafted with care since 2020.
                         </p>
                         <div className="flex gap-3">
@@ -152,7 +146,7 @@ const Footer = () => {
                         <ul className="space-y-3">
                             {quickLinks.map((link) => (
                                 <li key={link.name}>
-                                    <Link 
+                                    <Link
                                         to={link.path}
                                         className="text-neutral-600 hover:text-primary-600 transition-colors"
                                     >
@@ -169,7 +163,7 @@ const Footer = () => {
                         <ul className="space-y-3">
                             {companyLinks.map((link) => (
                                 <li key={link.name}>
-                                    <Link 
+                                    <Link
                                         to={link.path}
                                         className="text-neutral-600 hover:text-primary-600 transition-colors"
                                     >
@@ -186,7 +180,7 @@ const Footer = () => {
                         <ul className="space-y-3">
                             {supportLinks.map((link) => (
                                 <li key={link.name}>
-                                    <Link 
+                                    <Link
                                         to={link.path}
                                         className="text-neutral-600 hover:text-primary-600 transition-colors"
                                     >
@@ -234,7 +228,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h4 className="font-medium text-neutral-900 mb-1">Email Us</h4>
-                            <a 
+                            <a
                                 href="mailto:essencemakeinindia@gmail.com"
                                 className="text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                             >
@@ -249,7 +243,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h4 className="font-medium text-neutral-900 mb-1">Call Us</h4>
-                            <a 
+                            <a
                                 href="tel:+918281094184"
                                 className="text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                             >
@@ -270,7 +264,7 @@ const Footer = () => {
                                 Made with ❤️ in Wayanad, India
                             </p>
                         </div>
-                        
+
                         <div className="flex items-center gap-6 text-sm text-neutral-500">
                             <Link to="/privacy" className="hover:text-primary-600 transition-colors">
                                 Privacy Policy
