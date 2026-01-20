@@ -1,4 +1,4 @@
-import PageWrapper from '../animations/PageWrapper';
+import PageWrapper from '../animations/pageWrapper';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
